@@ -56,9 +56,19 @@ function backupVim {
 }
 
 
+function backupGit {
+    echo "Backing up Git dotfiles"
+
+    cat ~/.gitconfig > "$CUR_PATH/git/.gitconfig"
+
+    echo "Git dotfiles backup completed"
+}
+
+
 function fullBackup {
     backupVscode
     backupPikaur
     backupZsh
     backupVim
+    backupGit
 }
