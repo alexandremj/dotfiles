@@ -11,22 +11,87 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último padrão de busca :
-~MSle0~/get_session
+~MSle0~/$mod+
 
 # Último padrão de busca  de substituição:
 ~MSle0&08
 
+# Última string de substituição:
+$
+
 # Histórico de linha de comando (mais recente primeiro):
-:x
-|2,0,1580474873,,"x"
 :q
-|2,0,1580474850,,"q"
+|2,0,1587495946,,"q"
+:x
+|2,0,1587494886,,"x"
 :w
-|2,0,1580445285,,"w"
+|2,0,1587329684,,"w"
+:tabnew tools/redshifter.py
+|2,0,1587329667,,"tabnew tools/redshifter.py"
+:tabn tools/redshifter.py
+|2,0,1587329658,,"tabn tools/redshifter.py"
+:tabn rocketseat/semana-omnistack/frontend/src/index.js
+|2,0,1587329363,,"tabn rocketseat/semana-omnistack/frontend/src/index.js"
+:tabs
+|2,0,1587329238,,"tabs"
+:x kde-i3.sh
+|2,0,1586671255,,"x kde-i3.sh"
+:x automacoes_pipefy_ejep.txt
+|2,0,1586182437,,"x automacoes_pipefy_ejep.txt"
+:w foo.txt
+|2,0,1584559327,,"w foo.txt"
+:!synclient TapButton1=1
+|2,0,1584544313,,"!synclient TapButton1=1"
+:!polybar-msg cmd show
+|2,0,1584538994,,"!polybar-msg cmd show"
+:polybar-msg cmd show
+|2,0,1584538988,,"polybar-msg cmd show"
+:!polybar-msg cmd hide
+|2,0,1584538979,,"!polybar-msg cmd hide"
 :q!
-|2,0,1580442378,,"q!"
+|2,0,1584534004,,"q!"
+:a
+|2,0,1584533993,,"a"
+:! export $net1
+|2,0,1584488222,,"! export $net1"
+:x encaminhamentos_rd1603.txt
+|2,0,1584379751,,"x encaminhamentos_rd1603.txt"
+:x encaminhamentos_rg_0903.txt
+|2,0,1583849415,,"x encaminhamentos_rg_0903.txt"
+:w ~/paradigmas/atividade_2.py
+|2,0,1583503299,,"w ~/paradigmas/atividade_2.py"
+:x 1011.py
+|2,0,1583409209,,"x 1011.py"
+:x calculate_volume.py
+|2,0,1583408869,,"x calculate_volume.py"
+:vsp App.css
+|2,0,1582231079,,"vsp App.css"
+:set splitright
+|2,0,1582230915,,"set splitright"
+:hsp App.css
+|2,0,1582230902,,"hsp App.css"
+:help new-filetype
+|2,0,1582229224,,"help new-filetype"
+:let b:current_syntax = "js"
+|2,0,1582229080,,"let b:current_syntax = \"js\""
+:enable vim-javascript
+|2,0,1582228818,,"enable vim-javascript"
+:javascript_plugin_ngdoc=1
+|2,0,1582228775,,"javascript_plugin_ngdoc=1"
+:tabnew encaminhamentos_rg_1002.txt
+|2,0,1581384336,,"tabnew encaminhamentos_rg_1002.txt"
+::set syn=sh
+|2,0,1581295729,,":set syn=sh"
+:set syn=sh
+|2,0,1581295712,,"set syn=sh"
+:tabnew ~/new-dotfiles/dotfiles/i3/config
+|2,0,1581018097,,"tabnew ~/new-dotfiles/dotfiles/i3/config"
+:w goals_semana_lideranca.txt
+|2,0,1580779056,,"w goals_semana_lideranca.txt"
+:q goals_semana_lideranca.txt
+|2,0,1580779050,,"q goals_semana_lideranca.txt"
 :tabnew anotacoes_call_ejep_2901.txt
-|2,0,1580322174,,"tabnew anotacoes_call_ejep_2901.txt"
+|2,0,1580656754,,"tabnew anotacoes_call_ejep_2901.txt"
 :tabnew anotacoes_call_ejep_2201.txt
 |2,0,1580305328,,"tabnew anotacoes_call_ejep_2201.txt"
 :w anotacoes_2701.txt
@@ -55,62 +120,68 @@
 |2,0,1577681836,,"\"+yy"
 :"*yy
 |2,0,1577681827,,"\"*yy"
-:"*y
-|2,0,1577681809,,"\"*y"
-:"*p
-|2,0,1577681749,,"\"*p"
-:"+p
-|2,0,1577681680,,"\"+p"
-:ls
-|2,0,1577681671,,"ls"
-:["+]p
-|2,0,1577681664,,"[\"+]p"
-:help p
-|2,0,1577681623,,"help p"
-:"*P
-|2,0,1577681620,,"\"*P"
-:help x11-selection
-|2,0,1577681391,,"help x11-selection"
-:vs
-|2,0,1577681345,,"vs"
-:help registers
-|2,0,1577681122,,"help registers"
-:version
-|2,0,1577680229,,"version"
-:e $MYVIMRC
-|2,0,1577678108,,"e $MYVIMRC"
-:echo $MYVIMRC
-|2,0,1577678102,,"echo $MYVIMRC"
-:echo $HOME/.vimrc
-|2,0,1577678006,,"echo $HOME/.vimrc"
-:echo $HOME
-|2,0,1577677998,,"echo $HOME"
-:so %
-|2,0,1577676837,,"so %"
-:tabnew makeRequest.js
-|2,0,1576897498,,"tabnew makeRequest.js"
-:w fim_migracao.txt
-|2,0,1576604354,,"w fim_migracao.txt"
-:w ~/Desktop/fim_migracao.txt
-|2,0,1576604342,,"w ~/Desktop/fim_migracao.txt"
-:w ~/'Área de Trabalho'/fim_migracao.txt
-|2,0,1576604332,,"w ~/'Área de Trabalho'/fim_migracao.txt"
-:tabnew get_table_data.js
-|2,0,1576549018,,"tabnew get_table_data.js"
-:tabnew sendContacts.js
-|2,0,1576528854,,"tabnew sendContacts.js"
-:! node index.js
-|2,0,1576528197,,"! node index.js"
-:tabnew index.js
-|2,0,1576528187,,"tabnew index.js"
 
 # Histórico de expressões de busca (mais recente primeiro):
+?/$mod+
+|2,1,1587495939,47,"$mod+"
+?/font
+|2,1,1587494015,47,"font"
+?/$mod+Shift
+|2,1,1587278511,47,"$mod+Shift"
+?/alt
+|2,1,1587278490,47,"alt"
+?/mod
+|2,1,1587278456,47,"mod"
+?/urxvt
+|2,1,1587015887,47,"urxvt"
+? @$
+|2,1,1587013244,,"@$"
+?/terminal
+|2,1,1585802170,47,"terminal"
+?/network
+|2,1,1584488196,47,"network"
+?/wlan
+|2,1,1584488180,47,"wlan"
+?/module
+|2,1,1584485777,47,"module"
+?/module/powermenu
+|2,1,1584485771,47,"module/powermenu"
+?/example
+|2,1,1584485615,47,"example"
+?/bottom
+|2,1,1584485429,47,"bottom"
+?/background
+|2,1,1584485421,47,"background"
+?/bar
+|2,1,1584485065,47,"bar"
+?/G181
+|2,1,1582305632,47,"G181"
+?/181G
+|2,1,1582305629,47,"181G"
+?/181
+|2,1,1582305626,47,"181"
+?/181g
+|2,1,1582305624,47,"181g"
+?/battery
+|2,1,1582300683,47,"battery"
+?/findContacts
+|2,1,1582078148,47,"findContacts"
+?/find
+|2,1,1582078143,47,"find"
+?/find_contact
+|2,1,1582078084,47,"find_contact"
+?/bar {
+|2,1,1581292082,47,"bar {"
+?/exec
+|2,1,1581018417,47,"exec"
+?/border
+|2,1,1581018100,47,"border"
+? \<alias\>
+|2,1,1580478886,,"\\<alias\\>"
 ?/get_session
 |2,1,1580445377,47,"get_session"
 ?/gnome
 |2,1,1580442792,47,"gnome"
-?/exec
-|2,1,1580442395,47,"exec"
 ?/projeto
 |2,1,1579216825,47,"projeto"
 ? 08
@@ -128,301 +199,552 @@
 
 # Registradores:
 "0	LINE	0
-	naty
-|3,0,0,1,1,0,1577681877,"naty"
+	    max_brightness = os.system(f'echo {max_brightness_path}')
+|3,0,0,1,1,0,1587013244,"    max_brightness = os.system(f'echo {max_brightness_path}')"
 "1	LINE	0
-	exec startplasma-x11
-|3,0,1,1,1,0,1580445213,"exec startplasma-x11"
+	set shiftround
+|3,0,1,1,1,0,1587329649,"set shiftround"
 "2	LINE	0
-	exec startdde
-|3,0,2,1,1,0,1580443576,"exec startdde"
+	bindsym $mod+Return exec --no-startup-id urxvt 
+|3,0,2,1,1,0,1587015895,"bindsym $mod+Return exec --no-startup-id urxvt "
 "3	LINE	0
-	- https://zapier.com/apps/gmail/integrations/pipefy
-|3,0,3,1,1,0,1580305285,"- https://zapier.com/apps/gmail/integrations/pipefy"
+	# bindsym $mod+Return exec gnome-terminal
+|3,0,3,1,1,0,1587015892,"# bindsym $mod+Return exec gnome-terminal"
 "4	LINE	0
-	[Pixel] Higor Abreu
-	[Pixel] Levy Costa
-	[PIXEL] - Vinicius Pizetta
-	[Pixel] Victor Gevaerd
-	[PIXEL] Muller
-	[PIXEL] Gilmar Douglas
-	[Pixel] Jeferson Santos
-|3,0,4,1,7,0,1580149933,"[Pixel] Higor Abreu","[Pixel] Levy Costa","[PIXEL] - Vinicius Pizetta","[Pixel] Victor Gevaerd","[PIXEL] Muller","[PIXEL] Gilmar Douglas","[Pixel] Jeferson Santos"
+	# bindsym $mod+Return exec gnome-terminal
+|3,0,4,1,1,0,1587015810,"# bindsym $mod+Return exec gnome-terminal"
 "5	LINE	0
-	[Pixel] Lígia
-|3,0,5,1,1,0,1580149931,"[Pixel] Lígia"
+	    max_brightness = os.system(f'echo {max_brightness_path}')
+|3,0,5,1,1,0,1586987534,"    max_brightness = os.system(f'echo {max_brightness_path}')"
 "6	LINE	0
-	[PIXEL]Matheus Nunes Silva
-	
-|3,0,6,1,2,0,1580149929,"[PIXEL]Matheus Nunes Silva",""
+	    current_brightness = os.system(f'echo {brightness_path}')
+|3,0,6,1,1,0,1586987534,"    current_brightness = os.system(f'echo {brightness_path}')"
 "7	LINE	0
 	
-|3,0,7,1,1,0,1579448220,""
-"8	LINE	0
-	Remover Lorenzo do Slack
-|3,0,8,1,1,0,1579448220,"Remover Lorenzo do Slack"
-"9	LINE	0
+|3,0,7,1,1,0,1586987428,""
+"8	CHAR	0
+	def set_brightness(brightness: int):
+	    command = f'echo "{brightness}" > {brightness_path}'
 	
-|3,0,9,1,1,0,1579204279,""
+	    with open(brightness_path) as f:
+	        print(f'su -- session-command "{command}"')
+	        os.system(f'su --session-command "{command}"')
+	
+	
+|3,0,8,0,8,0,1586987405,"def set_brightness(brightness: int):","    command = f'echo \"{brightness}\" > {brightness_path}'","","    with open(brightness_path) as f:","        print(f'su -- session-command \"{command}\"')","        os.system(f'su --session-command \"{command}\"')","",""
+"9	LINE	0
+	unset DBUS_SESSION_BUS_ADDRESS
+|3,0,9,1,1,0,1585795948,"unset DBUS_SESSION_BUS_ADDRESS"
 "h	CHAR	0
 	elp he
 |3,0,17,0,1,0,1577681227,"elp he"
 ""-	CHAR	0
-	 
-|3,1,36,0,1,0,1580445470," "
+	r
+|3,1,36,0,1,0,1587494880,"r"
 
 # Marcas nos arquivos:
-'0  64  0  ~/dotfiles/backupFunctions.sh
-|4,48,64,0,1580474873,"~/dotfiles/backupFunctions.sh"
-'1  1  0  ~/dotfiles/main.sh
-|4,49,1,0,1580474850,"~/dotfiles/main.sh"
-'2  59  0  ~/backup/backup.py
-|4,50,59,0,1580474830,"~/backup/backup.py"
-'3  68  12  ~/.xinitrc
-|4,51,68,12,1580445477,"~/.xinitrc"
-'4  67  18  ~/.xinitrc
-|4,52,67,18,1580445318,"~/.xinitrc"
-'5  66  18  ~/.xinitrc
-|4,53,66,18,1580445318,"~/.xinitrc"
-'6  67  4  ~/.xinitrc
-|4,54,67,4,1580445258,"~/.xinitrc"
-'7  66  4  ~/.xinitrc
-|4,55,66,4,1580445258,"~/.xinitrc"
-'8  67  0  ~/.xinitrc
-|4,56,67,0,1580445217,"~/.xinitrc"
-'9  67  0  ~/.xinitrc
-|4,57,67,0,1580445217,"~/.xinitrc"
+'0  51  8  ~/.config/i3/config
+|4,48,51,8,1587495946,"~/.config/i3/config"
+'1  61  41  ~/.Xresources
+|4,49,61,41,1587494886,"~/.Xresources"
+'2  73  0  ~/.Xresources
+|4,50,73,0,1587494645,"~/.Xresources"
+'3  73  0  ~/.Xresources
+|4,51,73,0,1587494645,"~/.Xresources"
+'4  1  0  ~/.Xdefaults
+|4,52,1,0,1587494062,"~/.Xdefaults"
+'5  14  74  ~/.config/i3/config
+|4,53,14,74,1587494026,"~/.config/i3/config"
+'6  14  74  ~/.config/i3/config
+|4,54,14,74,1587494026,"~/.config/i3/config"
+'7  8  34  ~/mycalendar/backend/package.json
+|4,55,8,34,1587342242,"~/mycalendar/backend/package.json"
+'8  44  0  ~/tools/redshifter.py
+|4,56,44,0,1587332554,"~/tools/redshifter.py"
+'9  1  0  ~/tools/id_handler.py
+|4,57,1,0,1587329616,"~/tools/id_handler.py"
 
 # Lista de saltos (mais recente primeiro):
--'  64  0  ~/dotfiles/backupFunctions.sh
-|4,39,64,0,1580474873,"~/dotfiles/backupFunctions.sh"
--'  1  0  ~/dotfiles/backupFunctions.sh
-|4,39,1,0,1580474855,"~/dotfiles/backupFunctions.sh"
--'  1  0  ~/dotfiles/main.sh
-|4,39,1,0,1580474850,"~/dotfiles/main.sh"
--'  1  0  ~/dotfiles/main.sh
-|4,39,1,0,1580474850,"~/dotfiles/main.sh"
--'  59  0  ~/backup/backup.py
-|4,39,59,0,1580474830,"~/backup/backup.py"
--'  59  0  ~/backup/backup.py
-|4,39,59,0,1580474830,"~/backup/backup.py"
--'  59  0  ~/backup/backup.py
-|4,39,59,0,1580474830,"~/backup/backup.py"
--'  59  0  ~/backup/backup.py
-|4,39,59,0,1580474830,"~/backup/backup.py"
--'  1  0  ~/backup/backup.py
-|4,39,1,0,1580474762,"~/backup/backup.py"
--'  1  0  ~/backup/backup.py
-|4,39,1,0,1580474762,"~/backup/backup.py"
--'  1  0  ~/backup/backup.py
-|4,39,1,0,1580474762,"~/backup/backup.py"
--'  1  0  ~/backup/backup.py
-|4,39,1,0,1580474762,"~/backup/backup.py"
--'  68  12  ~/.xinitrc
-|4,39,68,12,1580445477,"~/.xinitrc"
--'  68  12  ~/.xinitrc
-|4,39,68,12,1580445477,"~/.xinitrc"
--'  68  12  ~/.xinitrc
-|4,39,68,12,1580445477,"~/.xinitrc"
--'  68  12  ~/.xinitrc
-|4,39,68,12,1580445477,"~/.xinitrc"
--'  68  12  ~/.xinitrc
-|4,39,68,12,1580445477,"~/.xinitrc"
--'  68  12  ~/.xinitrc
-|4,39,68,12,1580445477,"~/.xinitrc"
--'  68  12  ~/.xinitrc
-|4,39,68,12,1580445477,"~/.xinitrc"
--'  68  12  ~/.xinitrc
-|4,39,68,12,1580445477,"~/.xinitrc"
--'  57  36  ~/.xinitrc
-|4,39,57,36,1580445431,"~/.xinitrc"
--'  57  36  ~/.xinitrc
-|4,39,57,36,1580445431,"~/.xinitrc"
--'  57  36  ~/.xinitrc
-|4,39,57,36,1580445431,"~/.xinitrc"
--'  57  36  ~/.xinitrc
-|4,39,57,36,1580445431,"~/.xinitrc"
--'  57  36  ~/.xinitrc
-|4,39,57,36,1580445431,"~/.xinitrc"
--'  57  36  ~/.xinitrc
-|4,39,57,36,1580445431,"~/.xinitrc"
--'  57  36  ~/.xinitrc
-|4,39,57,36,1580445431,"~/.xinitrc"
--'  57  36  ~/.xinitrc
-|4,39,57,36,1580445431,"~/.xinitrc"
--'  41  0  ~/.xinitrc
-|4,39,41,0,1580445392,"~/.xinitrc"
--'  41  0  ~/.xinitrc
-|4,39,41,0,1580445392,"~/.xinitrc"
--'  41  0  ~/.xinitrc
-|4,39,41,0,1580445392,"~/.xinitrc"
--'  41  0  ~/.xinitrc
-|4,39,41,0,1580445392,"~/.xinitrc"
--'  41  0  ~/.xinitrc
-|4,39,41,0,1580445392,"~/.xinitrc"
--'  41  0  ~/.xinitrc
-|4,39,41,0,1580445392,"~/.xinitrc"
--'  41  0  ~/.xinitrc
-|4,39,41,0,1580445392,"~/.xinitrc"
--'  41  0  ~/.xinitrc
-|4,39,41,0,1580445392,"~/.xinitrc"
--'  67  7  ~/.xinitrc
-|4,39,67,7,1580445391,"~/.xinitrc"
--'  67  7  ~/.xinitrc
-|4,39,67,7,1580445391,"~/.xinitrc"
--'  67  7  ~/.xinitrc
-|4,39,67,7,1580445391,"~/.xinitrc"
--'  67  7  ~/.xinitrc
-|4,39,67,7,1580445391,"~/.xinitrc"
--'  67  7  ~/.xinitrc
-|4,39,67,7,1580445391,"~/.xinitrc"
--'  67  7  ~/.xinitrc
-|4,39,67,7,1580445391,"~/.xinitrc"
--'  67  7  ~/.xinitrc
-|4,39,67,7,1580445391,"~/.xinitrc"
--'  67  7  ~/.xinitrc
-|4,39,67,7,1580445391,"~/.xinitrc"
--'  4  0  ~/.xinitrc
-|4,39,4,0,1580445377,"~/.xinitrc"
--'  4  0  ~/.xinitrc
-|4,39,4,0,1580445377,"~/.xinitrc"
--'  4  0  ~/.xinitrc
-|4,39,4,0,1580445377,"~/.xinitrc"
--'  4  0  ~/.xinitrc
-|4,39,4,0,1580445377,"~/.xinitrc"
--'  4  0  ~/.xinitrc
-|4,39,4,0,1580445377,"~/.xinitrc"
--'  4  0  ~/.xinitrc
-|4,39,4,0,1580445377,"~/.xinitrc"
--'  4  0  ~/.xinitrc
-|4,39,4,0,1580445377,"~/.xinitrc"
--'  4  0  ~/.xinitrc
-|4,39,4,0,1580445377,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445334,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445334,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445334,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445334,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445334,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445334,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445334,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445334,"~/.xinitrc"
--'  66  18  ~/.xinitrc
-|4,39,66,18,1580445318,"~/.xinitrc"
--'  66  18  ~/.xinitrc
-|4,39,66,18,1580445318,"~/.xinitrc"
--'  66  18  ~/.xinitrc
-|4,39,66,18,1580445318,"~/.xinitrc"
--'  66  18  ~/.xinitrc
-|4,39,66,18,1580445318,"~/.xinitrc"
--'  66  18  ~/.xinitrc
-|4,39,66,18,1580445318,"~/.xinitrc"
--'  66  18  ~/.xinitrc
-|4,39,66,18,1580445318,"~/.xinitrc"
--'  66  18  ~/.xinitrc
-|4,39,66,18,1580445318,"~/.xinitrc"
--'  66  18  ~/.xinitrc
-|4,39,66,18,1580445318,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445265,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445265,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445265,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445265,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445265,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445265,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445265,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445265,"~/.xinitrc"
--'  66  4  ~/.xinitrc
-|4,39,66,4,1580445258,"~/.xinitrc"
--'  66  4  ~/.xinitrc
-|4,39,66,4,1580445258,"~/.xinitrc"
--'  66  4  ~/.xinitrc
-|4,39,66,4,1580445258,"~/.xinitrc"
--'  66  4  ~/.xinitrc
-|4,39,66,4,1580445258,"~/.xinitrc"
--'  66  4  ~/.xinitrc
-|4,39,66,4,1580445258,"~/.xinitrc"
--'  66  4  ~/.xinitrc
-|4,39,66,4,1580445258,"~/.xinitrc"
--'  66  4  ~/.xinitrc
-|4,39,66,4,1580445258,"~/.xinitrc"
--'  66  4  ~/.xinitrc
-|4,39,66,4,1580445258,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445240,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445240,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445240,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445240,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445240,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445240,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445240,"~/.xinitrc"
--'  1  0  ~/.xinitrc
-|4,39,1,0,1580445240,"~/.xinitrc"
--'  66  0  ~/.xinitrc
-|4,39,66,0,1580445217,"~/.xinitrc"
--'  66  0  ~/.xinitrc
-|4,39,66,0,1580445217,"~/.xinitrc"
--'  66  0  ~/.xinitrc
-|4,39,66,0,1580445217,"~/.xinitrc"
--'  66  0  ~/.xinitrc
-|4,39,66,0,1580445217,"~/.xinitrc"
--'  66  0  ~/.xinitrc
-|4,39,66,0,1580445217,"~/.xinitrc"
--'  66  0  ~/.xinitrc
-|4,39,66,0,1580445217,"~/.xinitrc"
--'  66  0  ~/.xinitrc
-|4,39,66,0,1580445217,"~/.xinitrc"
--'  66  0  ~/.xinitrc
-|4,39,66,0,1580445217,"~/.xinitrc"
+-'  51  8  ~/.config/i3/config
+|4,39,51,8,1587495946,"~/.config/i3/config"
+-'  48  8  ~/.config/i3/config
+|4,39,48,8,1587495941,"~/.config/i3/config"
+-'  45  8  ~/.config/i3/config
+|4,39,45,8,1587495940,"~/.config/i3/config"
+-'  44  10  ~/.config/i3/config
+|4,39,44,10,1587495940,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587495939,"~/.config/i3/config"
+-'  61  41  ~/.Xresources
+|4,39,61,41,1587494886,"~/.Xresources"
+-'  61  41  ~/.Xresources
+|4,39,61,41,1587494886,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1587494658,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1587494658,"~/.Xresources"
+-'  73  0  ~/.Xresources
+|4,39,73,0,1587494645,"~/.Xresources"
+-'  73  0  ~/.Xresources
+|4,39,73,0,1587494645,"~/.Xresources"
+-'  73  0  ~/.Xresources
+|4,39,73,0,1587494645,"~/.Xresources"
+-'  73  0  ~/.Xresources
+|4,39,73,0,1587494645,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1587494067,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1587494067,"~/.Xresources"
+-'  1  0  ~/.Xdefaults
+|4,39,1,0,1587494062,"~/.Xdefaults"
+-'  1  0  ~/.Xdefaults
+|4,39,1,0,1587494062,"~/.Xdefaults"
+-'  1  0  ~/.Xdefaults
+|4,39,1,0,1587494062,"~/.Xdefaults"
+-'  1  0  ~/.Xdefaults
+|4,39,1,0,1587494062,"~/.Xdefaults"
+-'  1  0  ~/.Xdefaults
+|4,39,1,0,1587494062,"~/.Xdefaults"
+-'  1  0  ~/.Xdefaults
+|4,39,1,0,1587494062,"~/.Xdefaults"
+-'  1  0  ~/.Xdefaults
+|4,39,1,0,1587494062,"~/.Xdefaults"
+-'  1  0  ~/.Xdefaults
+|4,39,1,0,1587494062,"~/.Xdefaults"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  14  74  ~/.config/i3/config
+|4,39,14,74,1587494026,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  39  0  ~/.config/i3/config
+|4,39,39,0,1587494015,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587494007,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587494007,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587494007,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587494007,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587494007,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587494007,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587494007,"~/.config/i3/config"
+-'  1  0  ~/.config/i3/config
+|4,39,1,0,1587494007,"~/.config/i3/config"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  8  34  ~/mycalendar/backend/package.json
+|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+-'  1  0  ~/mycalendar/backend/package.json
+|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
 
 # Histórico de marcas nos arquivos (mais recente primeiro):
 
-> ~/dotfiles/backupFunctions.sh
-	*	1580474872	0
-	"	64	0
+> ~/.config/i3/config
+	*	1587495941	0
+	"	51	8
+	^	224	20
+	.	224	19
+	+	191	0
+	+	190	3
+	+	190	11
+	+	190	19
+	+	190	13
+	+	189	2
+	+	190	8
+	+	190	15
+	+	190	16
+	+	190	47
+	+	194	18
+	+	193	26
+	+	199	42
+	+	16	21
+	+	20	29
+	+	46	73
+	+	199	66
+	+	194	24
+	+	193	18
+	+	199	0
+	+	199	5
+	+	194	1
+	+	195	0
+	+	197	0
+	+	183	112
+	+	185	19
+	+	182	30
+	+	46	1
+	+	46	38
+	+	186	16
+	+	185	22
+	+	203	38
+	+	206	13
+	+	205	12
+	+	206	6
+	+	205	12
+	+	206	7
+	+	205	5
+	+	206	12
+	+	205	11
+	+	206	5
+	+	205	11
+	+	206	11
+	+	205	12
+	+	206	13
+	+	207	0
+	+	180	6
+	+	182	0
+	+	185	1
+	+	186	0
+	+	187	0
+	+	208	59
+	+	209	0
+	+	210	40
+	+	211	28
+	+	210	33
+	+	211	63
+	+	210	55
+	+	211	0
+	+	210	37
+	+	199	0
+	+	210	38
+	+	199	0
+	+	212	27
+	+	46	1
+	+	46	29
+	+	207	1
+	+	209	1
+	+	211	1
+	+	180	0
+	+	180	5
+	+	181	3
+	+	183	56
+	+	184	3
+	+	185	3
+	+	186	0
+	+	183	4
+	+	181	26
+	+	46	38
+	+	46	0
+	+	46	38
+	+	46	40
+	+	46	0
+	+	45	0
+	+	46	0
+	+	45	0
+	+	207	1
+	+	208	1
+	+	224	19
 
-> ~/dotfiles/main.sh
-	*	1580474848	0
+> ~/.Xresources
+	*	1587494885	0
+	"	61	41
+	^	61	42
+	.	61	41
+	+	2	27
+	+	58	15
+	+	59	36
+	+	60	37
+	+	61	41
+
+> ~/.Xdefaults
+	*	1587494060	0
+	"	1	0
+	^	3	6
+	.	3	0
+	+	2	17
+	+	3	0
+
+> ~/mycalendar/backend/package.json
+	*	1587342241	0
+	"	8	34
+	^	8	35
+	.	8	34
+	+	8	34
+
+> ~/tools/redshifter.py
+	*	1587332552	0
+	"	44	0
+	^	1	1
+	.	1	0
+	+	21	38
+	+	19	54
+	+	17	75
+	+	21	46
+	+	42	59
+	+	47	50
+	+	11	2
+	+	10	38
+	+	40	30
+	+	45	21
+	+	1	0
+
+> ~/.vimrc
+	*	1587332551	0
+	"	1	0
+	.	5	0
+	+	6	14
+	+	7	9
+	+	8	0
+	+	9	8
+	+	1	0
+	+	3	0
+	+	6	0
+	+	5	0
+
+> ~/rocketseat/semana-omnistack/aulas/frontend/src/index.js
+	*	1587329413	0
 	"	1	0
 
-> ~/backup/backup.py
-	*	1580474767	0
-	"	59	0
+> ~/tools/id_handler.py
+	*	1587329363	0
+	"	1	0
+	^	48	0
+	.	47	59
+	+	47	59
+
+> ~/tools/change_brightness.py
+	*	1587329264	0
+	"	64	0
+	^	27	15
+	.	27	14
+	+	3	0
+	+	5	75
+	+	6	0
+	+	13	0
+	+	24	44
+	+	26	11
+	+	24	21
+	+	33	0
+	+	32	11
+	+	33	4
+	+	35	39
+	+	37	38
+	+	13	0
+	+	35	28
+	+	37	40
+	+	39	75
+	+	43	0
+	+	15	0
+	+	13	0
+	+	6	0
+	+	23	0
+	+	41	0
+	+	57	4
+	+	24	26
+	+	25	21
+	+	26	4
+	+	31	0
+	+	30	37
+	+	27	14
+
+> ~/.zshrc
+	*	1587275618	0
+	"	11	18
+	^	11	19
+	.	11	18
+	+	109	39
+	+	112	21
+	+	111	54
+	+	114	75
+	+	115	10
+	+	117	1
+	+	114	0
+	+	115	0
+	+	116	0
+	+	114	0
+	+	115	0
+	+	116	0
+	+	114	0
+	+	115	0
+	+	116	0
+	+	11	18
+
+> ~/tools/config/redshifter/redshifter.conf
+	*	1587060409	0
+	"	1	15
+	^	1	16
+	.	1	15
+	+	1	15
+
+> ~/telegram/README.md
+	*	1586979194	0
+	"	27	0
+
+> ~/.config/polybar/config
+	*	1586671869	0
+	"	15	0
+	^	35	17
+	.	35	16
+	+	145	0
+	+	1	0
+	+	60	0
+	+	31	0
+	+	32	0
+	+	31	35
+	+	34	12
+	+	33	1
+	+	34	1
+	+	230	17
+	+	35	16
+
+> ~/.xresources
+	*	1585801304	0
+	"	1	0
+
+> ~/Imagens/Papéis de parede/.xresources
+	*	1585801227	0
+	"	1	0
+
+> ~/.vnc/xstartup
+	*	1585796023	0
+	"	27	16
+	^	27	17
+	.	27	16
+	+	27	29
+	+	26	0
+	+	27	16
 
 > ~/.xinitrc
-	*	1580445477	0
-	"	68	12
-	^	68	13
-	.	68	12
-	+	67	21
-	+	68	12
+	*	1585278042	0
+	"	55	0
+	.	67	0
+	+	68	21
+	+	69	12
 	+	12	23
-	+	67	0
 	+	68	0
+	+	69	0
 	+	12	21
-	+	67	21
-	+	68	0
-	+	67	1
+	+	68	21
+	+	69	0
+	+	68	1
 	+	41	0
 	+	43	0
 	+	44	0
@@ -447,8 +769,511 @@
 	+	61	0
 	+	63	24
 	+	65	1
-	+	67	21
-	+	68	12
+	+	68	21
+	+	69	12
+	+	70	9
+	+	12	17
+	+	68	21
+	+	69	15
+	+	68	0
+	+	69	0
+	+	70	0
+	+	67	0
+
+> ~/Downloads/typewriter/key2_linux.py
+	*	1585084847	0
+	"	68	0
+
+> ~/Downloads/typewriter/key2_linux.py~
+	*	1585084829	0
+	"	69	0
+
+> ~/Downloads/typewriter/key2.py
+	*	1585084766	0
+	"	46	0
+
+> ~/moodle-ufsc-cli/credentials.json
+	*	1584562328	0
+	"	2	43
+	^	2	44
+	.	2	43
+	+	4	0
+	+	3	16
+	+	2	4
+	+	3	4
+	+	2	10
+	+	3	13
+	+	2	13
+	+	3	37
+	+	2	43
+
+> ~/index.js
+	*	1584489120	0
+	"	4	41
+	^	4	42
+	.	4	41
+	+	5	0
+	+	4	41
+
+> ~/.config/polybar/launch.sh
+	*	1584485286	0
+	"	9	14
+	^	9	15
+	.	9	14
+	+	1	19
+	+	11	22
+	+	9	0
+	+	11	0
+	+	9	8
+	+	10	0
+	+	9	14
+
+> /usr/share/vim/vim82/doc/help.txt
+	*	1584479407	0
+	"	1	0
+
+> ~/encaminhamentos_rg_0903.txt
+	*	1583871386	0
+	"	1	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/paradigmas/atividade_2.py
+	*	1583503356	0
+	"	17	13
+	^	17	14
+	.	17	13
+	+	17	13
+
+> ~/paradigmas/2187.py
+	*	1583429584	0
+	"	1	0
+
+> ~/paradigmas/1015.py
+	*	1583410058	0
+	"	6	0
+	^	4	22
+	.	4	21
+	+	4	69
+	+	7	28
+	+	13	44
+	+	4	79
+	+	5	9
+	+	15	14
+	+	1	10
+	+	4	21
+
+> ~/paradigmas/1014.py
+	*	1583409543	0
+	"	1	0
+	^	9	14
+	.	9	13
+	+	6	22
+	+	5	14
+	+	9	17
+	+	8	10
+	+	9	27
+	+	3	42
+	+	9	13
+
+> ~/calculate_volume.py
+	*	1583409073	0
+	"	1	0
+	^	3	54
+	.	3	53
+	+	5	20
+	+	3	43
+	+	5	13
+	+	3	53
+
+> ~/.config/gtk-3.0/gtk.css
+	*	1583328783	0
+	"	10	17
+	^	10	18
+	.	10	17
+	+	11	0
+	+	10	17
+
+> ~/pixel-temp/e-mail_valor_aduaneiro.txt
+	*	1582911768	0
+	"	7	4
+	^	7	5
+	.	7	4
+	+	5	72
+	+	7	4
+
+> ~/.config/i3blocks/config
+	*	1582814748	0
+	"	44	18
+	^	44	19
+	.	44	18
+	+	35	14
+	+	34	24
+	+	35	15
+	+	33	12
+	+	12	0
+	+	18	9
+	+	15	6
+	+	16	61
+	+	20	1
+	+	21	1
+	+	22	1
+	+	23	1
+	+	24	1
+	+	26	9
+	+	30	11
+	+	38	1
+	+	39	1
+	+	40	1
+	+	41	1
+	+	44	20
+	+	28	66
+	+	28	103
+	+	28	0
+	+	27	12
+	+	44	18
+
+> /etc/wpa_supplicant/wpa_supplicant.conf
+	*	1582812125	0
+	"	1	0
+
+> ~/learning-react/src/App.js
+	*	1582231156	0
+	"	14	52
+	^	17	52
+	.	17	51
+	+	13	26
+	+	3	17
+	+	15	0
+	+	12	32
+	+	13	7
+	+	15	11
+	+	14	75
+	+	17	51
+
+> ~/learning-react/src/App.css
+	*	1582231104	0
+	"	15	19
+	^	15	20
+	.	15	19
+	+	17	0
+	+	16	23
+	+	12	12
+	+	15	19
+
+> ~/App.css
+	*	1582229854	0
+	"	1	0
+
+> ~/.vim/ftdetect/javascript.vim
+	*	1582229317	0
+	"	1	26
+	^	1	27
+	.	1	26
+	+	1	26
+
+> /usr/share/vim/vim82/doc/filetype.txt
+	*	1582229238	0
+	"	172	14
+
+> ~/App.js
+	*	1582223052	0
+	"	1	0
+
+> ~/learning-react/App.js
+	*	1582220515	0
+	"	1	0
+
+> ~/permuta/connect-fields/index.js
+	*	1582078268	0
+	"	185	0
+
+> ~/jungle_rocks.txt
+	*	1581387093	0
+	"	1	0
+	^	6	19
+	.	6	18
+	+	6	18
+
+> ~/anotacoes_2701.txt
+	*	1581384583	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/anotacoes_1002.txt
+	*	1581384394	0
+	"	1	7
+	^	84	11
+	.	84	10
+	+	3	22
+	+	12	35
+	+	11	45
+	+	17	18
+	+	16	70
+	+	17	54
+	+	13	21
+	+	20	80
+	+	23	92
+	+	31	78
+	+	35	36
+	+	40	1
+	+	39	23
+	+	43	50
+	+	37	39
+	+	58	0
+	+	45	45
+	+	45	6
+	+	45	46
+	+	57	43
+	+	59	79
+	+	60	15
+	+	62	73
+	+	61	58
+	+	63	41
+	+	25	0
+	+	63	77
+	+	66	74
+	+	70	23
+	+	76	14
+	+	75	37
+	+	77	0
+	+	79	80
+	+	80	28
+	+	72	11
+	+	80	81
+	+	82	66
+	+	84	10
+
+> ~/encaminhamentos_rg_1002.txt
+	*	1581384391	0
+	"	1	0
+	^	4	7
+	.	2	6
+	+	1	42
+	+	4	47
+	+	5	0
+	+	1	7
+	+	2	6
+
+> ~/.config/i3blocks/ssid
+	*	1581295891	0
+	"	39	0
+	^	37	2
+	.	37	0
+	+	38	0
+	+	39	0
+	+	37	0
+
+> ~/.config/i3blocks/i3blocks-spotify.py
+	*	1581295017	0
+	"	7	0
+	.	7	0
+	+	7	0
+
+> ~/.i3blocks.conf
+	*	1581293716	0
+	"	26	25
+	^	26	26
+	.	26	25
+	+	26	25
+
+> ~/spotify.py
+	*	1581293109	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> /etc/i3blocks.conf
+	*	1581292490	0
+	"	1	0
+
+> /etc/i3status.conf
+	*	1581292130	0
+	"	38	0
+
+> ~/.zprofile
+	*	1581018403	0
+	"	1	0
+
+> ~/new-dotfiles/dotfiles/i3/config
+	*	1581018100	0
+	"	188	22
+
+> /etc/systemd/system/display-manager.service
+	*	1581015639	0
+	"	1	0
+
+> ~/new-dotfiles/dotfiles/config
+	*	1580941170	0
+	"	1	0
+
+> /etc/gitconfig
+	*	1580939786	0
+	"	1	0
+
+> ~/.gitconfig
+	*	1580939779	0
+	"	1	0
+
+> ~/ata_1912.txt
+	*	1580911180	0
+	"	1	0
+	^	2	32
+	.	2	31
+	+	2	22
+	+	4	49
+	+	2	31
+
+> ~/RD_1601.txt
+	*	1580911153	0
+	"	1	0
+	^	15	17
+	.	15	16
+	+	15	5
+	+	18	61
+	+	17	23
+	+	18	33
+	+	28	23
+	+	19	17
+	+	17	11
+	+	22	39
+	+	21	12
+	+	26	11
+	+	10	68
+	+	47	4
+	+	39	33
+	+	28	0
+	+	15	16
+
+> ~/anotacoes_0701.txt
+	*	1580911099	0
+	"	1	0
+
+> ~/anotacoes_rd_0302.txt
+	*	1580911037	0
+	"	1	0
+	^	10	71
+	.	10	70
+	+	2	21
+	+	2	28
+	+	1	0
+	+	2	23
+	+	10	70
+
+> ~/mono_crash.365060206.0.json
+	*	1580910704	0
+	"	291	0
+
+> ~/anotacoes_call_ejep_0202.txt
+	*	1580910635	0
+	"	1	0
+	^	17	82
+	.	17	81
+	+	2	41
+	+	1	49
+	+	2	38
+	+	3	0
+	+	14	0
+	+	7	0
+	+	8	76
+	+	10	59
+	+	12	0
+	+	13	9
+	+	10	74
+	+	11	67
+	+	13	27
+	+	14	0
+	+	13	38
+	+	10	77
+	+	11	60
+	+	6	61
+	+	14	0
+	+	13	46
+	+	15	80
+	+	17	81
+	o	10	56
+
+> ~/anotacoes_entrega_ejep.txt
+	*	1580909967	0
+	"	1	0
+
+> ~/desafio-labtrans/main.py
+	*	1580761041	0
+	"	59	0
+
+> ~/repasses_ejep.txt
+	*	1580669355	0
+	"	1	59
+	^	1	60
+	.	1	59
+	+	1	59
+
+> ~/anotacoes_call_ejep_2901.txt
+	*	1580666609	0
+	"	1	0
+	^	7	41
+	.	7	40
+	+	1	36
+	+	4	16
+	+	7	40
+
+> ~/.local/lib/python3.8/site-packages/simplemediawiki.py
+	*	1580587242	0
+	"	179	34
+	^	179	35
+	.	179	34
+	+	179	34
+
+> ~/crypt0friday/annotations.txt
+	*	1580559323	0
+	"	11	0
+	^	10	0
+	.	11	0
+	+	8	6
+	+	6	75
+	+	7	63
+	+	8	40
+	+	10	0
+	+	11	0
+
+> ~/connect.sh
+	*	1580493896	0
+	"	2	55
+	^	2	56
+	.	2	55
+	+	1	0
+	+	6	1
+	+	1	6
+	+	1	10
+	+	1	17
+	+	2	54
+	+	9	10
+	+	8	15
+	+	1	0
+	+	2	55
+
+> ~/test-drive-api/main.py
+	*	1580475304	0
+	"	1	0
+
+> ~/dotfiles/postInstallation.sh
+	*	1580475190	0
+	"	144	0
+
+> ~/dotfiles/backupFunctions.sh
+	*	1580474872	0
+	"	64	0
+
+> ~/dotfiles/main.sh
+	*	1580474848	0
+	"	1	0
+
+> ~/backup/backup.py
+	*	1580474767	0
+	"	59	0
 
 > ~/.Xclients
 	*	1580444931	0
@@ -468,15 +1293,6 @@
 	^	16	25
 	.	16	24
 	+	16	24
-
-> ~/anotacoes_call_ejep_2901.txt
-	*	1580324381	0
-	"	7	40
-	^	7	41
-	.	7	40
-	+	1	36
-	+	4	16
-	+	7	40
 
 > ~/duvidas_perguntar_ejep.txt
 	*	1580324380	0
@@ -498,62 +1314,15 @@
 	+	20	63
 	+	21	69
 
-> ~/anotacoes_entrega_ejep.txt
-	*	1580304921	0
-	"	1	0
-
-> ~/.zshrc
-	*	1579627474	0
-	"	111	54
-	^	111	55
-	.	111	54
-	+	109	39
-	+	112	21
-	+	111	54
-
-> ~/desafio-labtrans/main.py
-	*	1579565892	0
-	"	1	0
-
 > ~/functions.js
 	*	1579564351	0
 	"	105	10
-
-> ~/RD_1601.txt
-	*	1579449246	0
-	"	15	16
-	^	15	17
-	.	15	16
-	+	15	5
-	+	18	61
-	+	17	23
-	+	18	33
-	+	28	23
-	+	19	17
-	+	17	11
-	+	22	39
-	+	21	12
-	+	26	11
-	+	10	68
-	+	47	4
-	+	39	33
-	+	28	0
-	+	15	16
 
 > ~/reuniao_leandro_entrega.txt
 	*	1579307519	0
 	"	1	10
 	.	1	9
 	+	1	9
-
-> ~/.vimrc
-	*	1579028666	0
-	"	1	0
-	^	8	10
-	.	9	0
-	+	7	14
-	+	8	9
-	+	9	0
 
 > ~/.vim/plugin/supertab.vim
 	*	1578877009	0
@@ -711,207 +1480,3 @@
 > ~/Downloads/supertab.vmb
 	*	1577676842	0
 	"	1	0
-
-> ~/.vim/.VimballRecord
-	*	1577676837	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/selenium/intro.py
-	*	1577493689	0
-	"	15	1
-	^	12	45
-	.	11	0
-	+	15	1
-	+	11	0
-
-> ~/permuta/functions.js
-	*	1577127130	0
-	"	64	0
-	^	64	0
-	.	63	4
-	+	68	9
-	+	67	0
-	+	65	22
-	+	68	20
-	+	123	4
-	+	118	23
-	+	66	25
-	+	71	45
-	+	69	16
-	+	63	4
-
-> ~/permuta/.git/MERGE_MSG
-	*	1577126991	0
-	"	8	38
-	^	8	39
-	.	8	38
-	+	8	38
-
-> ~/permuta/creator.js
-	*	1577126469	0
-	"	154	0
-
-> ~/permuta/sendCompaniesData.js
-	*	1577125551	0
-	"	29	5
-
-> ~/permuta/get_table_data.js
-	*	1576963141	0
-	"	33	1
-	^	12	30
-	.	12	30
-	+	12	30
-
-> ~/permuta/getContactsTableData.js
-	*	1576957172	0
-	"	33	0
-
-> ~/permuta/makeRequest.js
-	*	1576900386	0
-	"	24	6
-	^	23	7
-	.	23	7
-	+	23	7
-
-> ~/permuta/test_functions.js
-	*	1576898675	0
-	"	3	21
-	^	3	22
-	.	3	21
-	+	3	21
-
-> ~/permuta/records.json
-	*	1576898122	0
-	"	1	3700
-
-> ~/permuta/.gitignore
-	*	1576895546	0
-	"	2	5
-	^	2	6
-	.	2	5
-	+	1	12
-	+	1	0
-	+	1	9
-	+	1	12
-	+	1	0
-	+	2	5
-
-> ~/ata_1912.txt
-	*	1576801463	0
-	"	2	31
-	^	2	32
-	.	2	31
-	+	2	22
-	+	4	49
-	+	2	31
-
-> ~/permuta/eraser.js
-	*	1576764632	0
-	"	17	0
-
-> ~/anotacoes_tecehistorias.txt
-	*	1576621435	0
-	"	15	80
-	^	15	81
-	.	15	81
-	+	19	68
-	+	8	39
-	+	6	33
-	+	20	59
-	+	7	0
-	+	22	93
-	+	24	4
-	+	9	25
-	+	28	59
-	+	17	18
-	+	26	23
-	+	28	74
-	+	1	24
-	+	30	6
-	+	15	81
-
-> ~/permuta/send_data_pipefy.js
-	*	1576549132	0
-	"	13	33
-	^	12	34
-	.	13	0
-	+	12	33
-	+	13	0
-
-> ~/send_data_pipefy.js
-	*	1576549081	0
-	"	1	0
-
-> ~/permuta/sendContacts.js
-	*	1576548786	0
-	"	29	5
-	^	14	106
-	.	14	105
-	+	15	50
-	+	21	39
-	+	15	35
-	+	17	39
-	+	18	67
-	+	20	72
-	+	22	83
-	+	19	0
-	+	8	50
-	+	7	41
-	+	11	33
-	+	23	73
-	+	25	83
-	+	21	67
-	+	22	0
-	+	20	39
-	+	13	53
-	+	30	1
-	+	29	0
-	+	12	36
-	+	16	35
-	+	12	36
-	+	13	66
-	+	14	24
-	+	15	9
-	+	14	22
-	+	15	55
-	+	15	19
-	+	15	6
-	+	15	22
-	+	15	30
-	+	15	18
-	+	13	6
-	+	15	6
-	+	15	0
-	+	15	4
-	+	14	4
-	+	14	0
-	+	13	4
-	+	14	105
-
-> ~/permuta/allQueries.js
-	*	1576548774	0
-	"	1	0
-	.	1	0
-	+	1	0
-
-> ~/Downloads/Python-3.4.10/README
-	*	1576534733	0
-	"	35	0
-
-> ~/permuta/index.js
-	*	1576528913	0
-	"	1	41
-	^	1	45
-	.	1	44
-	+	4	28
-	+	3	28
-	+	3	14
-	+	4	0
-	+	3	0
-	+	1	44
-
-> ~/permuta/sendCompanies.js
-	*	1576526396	0
-	"	57	0

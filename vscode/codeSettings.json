@@ -1,1 +1,1 @@
-{ "workbench.colorTheme": "SynthWave '84", "explorer.confirmDelete": false }
+{ "workbench.colorTheme": "SynthWave '84", "explorer.confirmDelete": false, "window.menuBarVisibility": "toggle", "workbench.startupEditor": "newUntitledFile", "window.zoomLevel": 0, "editor.renderWhitespace": "all", "workbench.iconTheme": "material-icon-theme", "explorer.confirmDragAndDrop": false, // From Semana OmniStack 11 "emmet.syntaxProfiles": { "javascript" : "jsx" }, "emmet.includeLanguages": {"javascript": "javascriptreact"} "editor.fontLigatures": true "editor.fontFamily": "Fira Code" }
