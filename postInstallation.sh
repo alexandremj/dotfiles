@@ -20,17 +20,13 @@ function installPikaur {
 
 function shellConfiguration {
     echo "Starting shell configuration..."
+    pikaur -S zsh
 
-    chsh -s /bin/zsh
+    chsh -s $(which zsh)
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-    # install dracula color theme on gnome-terminal
-    pikaur -S dconf
-    git clone https://github.com/GalaticStryder/gnome-terminal-colors-dracula
-    cd gnome-terminal-colors-dracula
-    ./install.sh
-    cd ..
-    rm -rf gnome-terminal-colors-dracula
+    pikaur -S alacritty
+    cp ./alacritty/.alacritty.yml $HOME_DIR/
 
     sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zplugin/master/doc/install.sh)"
 
@@ -41,9 +37,9 @@ function shellConfiguration {
 function installTextEditors {
     echo "Installing text editors..."
 
-    pikaur -S vim code
+    pikaur -S nvim
 
-    echo "Vim and Visual Studio Code installed"
+    echo "NeoVim installed"
 }
 
 
@@ -52,7 +48,7 @@ function gitConfiguration {
 
     git config --global user.name "Alexandre Muller Junior"
     git config --global user.email "alexandremj@pm.me"
-    git config --global core.editor vim
+    git config --global core.editor nvim
 
     echo "Git configuration concluded"
 }

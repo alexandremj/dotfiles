@@ -108,8 +108,12 @@ zplugin light zdharma/fast-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 
-alias up='pikaur -Syu; pip install pip --upgrade --user'
+alias up='pikaur -Syu'
 alias get='pikaur -S '
+
+alias vim='nvim ' 
+
+export PATH=$PATH:$HOME/tools
 
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx

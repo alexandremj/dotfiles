@@ -2,4 +2,4 @@
 	email = alexandremj@pm.me
 	name = Alexandre Muller Junior
 [core]
-	editor = vim
+	editor = nvim

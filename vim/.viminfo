@@ -11,7 +11,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Último padrão de busca :
-~MSle0~/$mod+
+~MSle0~/terminal
 
 # Último padrão de busca  de substituição:
 ~MSle0&08
@@ -21,11 +21,15 @@ $
 
 # Histórico de linha de comando (mais recente primeiro):
 :q
-|2,0,1587495946,,"q"
+|2,0,1589002817,,"q"
+:!polybar-msg cmd showq
+|2,0,1589002731,,"!polybar-msg cmd showq"
 :x
-|2,0,1587494886,,"x"
+|2,0,1589002602,,"x"
 :w
-|2,0,1587329684,,"w"
+|2,0,1588997150,,"w"
+:q!
+|2,0,1588995182,,"q!"
 :tabnew tools/redshifter.py
 |2,0,1587329667,,"tabnew tools/redshifter.py"
 :tabn tools/redshifter.py
@@ -48,8 +52,6 @@ $
 |2,0,1584538988,,"polybar-msg cmd show"
 :!polybar-msg cmd hide
 |2,0,1584538979,,"!polybar-msg cmd hide"
-:q!
-|2,0,1584534004,,"q!"
 :a
 |2,0,1584533993,,"a"
 :! export $net1
@@ -118,10 +120,14 @@ $
 |2,0,1577681901,,"echo has('clipboard')"
 :"+yy
 |2,0,1577681836,,"\"+yy"
-:"*yy
-|2,0,1577681827,,"\"*yy"
 
 # Histórico de expressões de busca (mais recente primeiro):
+?/terminal
+|2,1,1588992985,47,"terminal"
+?/$mod+enter
+|2,1,1588992870,47,"$mod+enter"
+?/mod+Enter
+|2,1,1588992865,47,"mod+Enter"
 ?/$mod+
 |2,1,1587495939,47,"$mod+"
 ?/font
@@ -136,8 +142,6 @@ $
 |2,1,1587015887,47,"urxvt"
 ? @$
 |2,1,1587013244,,"@$"
-?/terminal
-|2,1,1585802170,47,"terminal"
 ?/network
 |2,1,1584488196,47,"network"
 ?/wlan
@@ -202,277 +206,308 @@ $
 	    max_brightness = os.system(f'echo {max_brightness_path}')
 |3,0,0,1,1,0,1587013244,"    max_brightness = os.system(f'echo {max_brightness_path}')"
 "1	LINE	0
-	set shiftround
-|3,0,1,1,1,0,1587329649,"set shiftround"
+	urxvt*scrollBar: false
+	
+|3,0,1,1,2,0,1588996047,"urxvt*scrollBar: false",""
 "2	LINE	0
-	bindsym $mod+Return exec --no-startup-id urxvt 
-|3,0,2,1,1,0,1587015895,"bindsym $mod+Return exec --no-startup-id urxvt "
+	gnome-terminal*shading: 30
+|3,0,2,1,1,0,1588996045,"gnome-terminal*shading: 30"
 "3	LINE	0
-	# bindsym $mod+Return exec gnome-terminal
-|3,0,3,1,1,0,1587015892,"# bindsym $mod+Return exec gnome-terminal"
+	gnome-terminal*transparent: true
+|3,0,3,1,1,0,1588996045,"gnome-terminal*transparent: true"
 "4	LINE	0
-	# bindsym $mod+Return exec gnome-terminal
-|3,0,4,1,1,0,1587015810,"# bindsym $mod+Return exec gnome-terminal"
+	set shiftround
+|3,0,4,1,1,0,1587329649,"set shiftround"
 "5	LINE	0
-	    max_brightness = os.system(f'echo {max_brightness_path}')
-|3,0,5,1,1,0,1586987534,"    max_brightness = os.system(f'echo {max_brightness_path}')"
+	bindsym $mod+Return exec --no-startup-id urxvt 
+|3,0,5,1,1,0,1587015895,"bindsym $mod+Return exec --no-startup-id urxvt "
 "6	LINE	0
-	    current_brightness = os.system(f'echo {brightness_path}')
-|3,0,6,1,1,0,1586987534,"    current_brightness = os.system(f'echo {brightness_path}')"
+	# bindsym $mod+Return exec gnome-terminal
+|3,0,6,1,1,0,1587015892,"# bindsym $mod+Return exec gnome-terminal"
 "7	LINE	0
-	
-|3,0,7,1,1,0,1586987428,""
-"8	CHAR	0
-	def set_brightness(brightness: int):
-	    command = f'echo "{brightness}" > {brightness_path}'
-	
-	    with open(brightness_path) as f:
-	        print(f'su -- session-command "{command}"')
-	        os.system(f'su --session-command "{command}"')
-	
-	
-|3,0,8,0,8,0,1586987405,"def set_brightness(brightness: int):","    command = f'echo \"{brightness}\" > {brightness_path}'","","    with open(brightness_path) as f:","        print(f'su -- session-command \"{command}\"')","        os.system(f'su --session-command \"{command}\"')","",""
+	# bindsym $mod+Return exec gnome-terminal
+|3,0,7,1,1,0,1587015810,"# bindsym $mod+Return exec gnome-terminal"
+"8	LINE	0
+	    max_brightness = os.system(f'echo {max_brightness_path}')
+|3,0,8,1,1,0,1586987534,"    max_brightness = os.system(f'echo {max_brightness_path}')"
 "9	LINE	0
-	unset DBUS_SESSION_BUS_ADDRESS
-|3,0,9,1,1,0,1585795948,"unset DBUS_SESSION_BUS_ADDRESS"
+	    current_brightness = os.system(f'echo {brightness_path}')
+|3,0,9,1,1,0,1586987534,"    current_brightness = os.system(f'echo {brightness_path}')"
 "h	CHAR	0
 	elp he
 |3,0,17,0,1,0,1577681227,"elp he"
 ""-	CHAR	0
-	r
-|3,1,36,0,1,0,1587494880,"r"
+	A
+|3,1,36,0,1,0,1589002601,"A"
 
 # Marcas nos arquivos:
-'0  51  8  ~/.config/i3/config
-|4,48,51,8,1587495946,"~/.config/i3/config"
-'1  61  41  ~/.Xresources
-|4,49,61,41,1587494886,"~/.Xresources"
-'2  73  0  ~/.Xresources
-|4,50,73,0,1587494645,"~/.Xresources"
-'3  73  0  ~/.Xresources
-|4,51,73,0,1587494645,"~/.Xresources"
-'4  1  0  ~/.Xdefaults
-|4,52,1,0,1587494062,"~/.Xdefaults"
-'5  14  74  ~/.config/i3/config
-|4,53,14,74,1587494026,"~/.config/i3/config"
-'6  14  74  ~/.config/i3/config
-|4,54,14,74,1587494026,"~/.config/i3/config"
-'7  8  34  ~/mycalendar/backend/package.json
-|4,55,8,34,1587342242,"~/mycalendar/backend/package.json"
-'8  44  0  ~/tools/redshifter.py
-|4,56,44,0,1587332554,"~/tools/redshifter.py"
-'9  1  0  ~/tools/id_handler.py
-|4,57,1,0,1587329616,"~/tools/id_handler.py"
+'0  118  0  ~/.zshrc
+|4,48,118,0,1589002817,"~/.zshrc"
+'1  1  0  ~/.zshrc
+|4,49,1,0,1589002717,"~/.zshrc"
+'2  1  0  ~/.zshrc
+|4,50,1,0,1589002717,"~/.zshrc"
+'3  1  0  ~/.zshrc
+|4,51,1,0,1589002711,"~/.zshrc"
+'4  1  0  ~/.zshrc
+|4,52,1,0,1589002711,"~/.zshrc"
+'5  11  11  ~/.zshrc
+|4,53,11,11,1589002603,"~/.zshrc"
+'6  11  11  ~/.zshrc
+|4,54,11,11,1589002603,"~/.zshrc"
+'7  11  11  ~/.zshrc
+|4,55,11,11,1589002603,"~/.zshrc"
+'8  11  11  ~/.zshrc
+|4,56,11,11,1589002603,"~/.zshrc"
+'9  11  11  ~/.zshrc
+|4,57,11,11,1589002603,"~/.zshrc"
 
 # Lista de saltos (mais recente primeiro):
--'  51  8  ~/.config/i3/config
-|4,39,51,8,1587495946,"~/.config/i3/config"
--'  48  8  ~/.config/i3/config
-|4,39,48,8,1587495941,"~/.config/i3/config"
--'  45  8  ~/.config/i3/config
-|4,39,45,8,1587495940,"~/.config/i3/config"
--'  44  10  ~/.config/i3/config
-|4,39,44,10,1587495940,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587495939,"~/.config/i3/config"
--'  61  41  ~/.Xresources
-|4,39,61,41,1587494886,"~/.Xresources"
--'  61  41  ~/.Xresources
-|4,39,61,41,1587494886,"~/.Xresources"
+-'  118  0  ~/.zshrc
+|4,39,118,0,1589002817,"~/.zshrc"
+-'  14  0  ~/.zshrc
+|4,39,14,0,1589002723,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1589002721,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1589002717,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1589002711,"~/.zshrc"
+-'  11  11  ~/.zshrc
+|4,39,11,11,1589002603,"~/.zshrc"
+-'  11  11  ~/.zshrc
+|4,39,11,11,1589002603,"~/.zshrc"
+-'  11  11  ~/.zshrc
+|4,39,11,11,1589002603,"~/.zshrc"
+-'  11  11  ~/.zshrc
+|4,39,11,11,1589002603,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1589002598,"~/.zshrc"
+-'  11  14  ~/.zshrc
+|4,39,11,14,1589002581,"~/.zshrc"
+-'  1  0  ~/.zshrc
+|4,39,1,0,1589002538,"~/.zshrc"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
+-'  79  0  ~/.Xresources
+|4,39,79,0,1588997987,"~/.Xresources"
 -'  1  0  ~/.Xresources
-|4,39,1,0,1587494658,"~/.Xresources"
+|4,39,1,0,1588997115,"~/.Xresources"
 -'  1  0  ~/.Xresources
-|4,39,1,0,1587494658,"~/.Xresources"
--'  73  0  ~/.Xresources
-|4,39,73,0,1587494645,"~/.Xresources"
--'  73  0  ~/.Xresources
-|4,39,73,0,1587494645,"~/.Xresources"
--'  73  0  ~/.Xresources
-|4,39,73,0,1587494645,"~/.Xresources"
--'  73  0  ~/.Xresources
-|4,39,73,0,1587494645,"~/.Xresources"
+|4,39,1,0,1588997115,"~/.Xresources"
 -'  1  0  ~/.Xresources
-|4,39,1,0,1587494067,"~/.Xresources"
+|4,39,1,0,1588997115,"~/.Xresources"
 -'  1  0  ~/.Xresources
-|4,39,1,0,1587494067,"~/.Xresources"
--'  1  0  ~/.Xdefaults
-|4,39,1,0,1587494062,"~/.Xdefaults"
--'  1  0  ~/.Xdefaults
-|4,39,1,0,1587494062,"~/.Xdefaults"
--'  1  0  ~/.Xdefaults
-|4,39,1,0,1587494062,"~/.Xdefaults"
--'  1  0  ~/.Xdefaults
-|4,39,1,0,1587494062,"~/.Xdefaults"
--'  1  0  ~/.Xdefaults
-|4,39,1,0,1587494062,"~/.Xdefaults"
--'  1  0  ~/.Xdefaults
-|4,39,1,0,1587494062,"~/.Xdefaults"
--'  1  0  ~/.Xdefaults
-|4,39,1,0,1587494062,"~/.Xdefaults"
--'  1  0  ~/.Xdefaults
-|4,39,1,0,1587494062,"~/.Xdefaults"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  14  74  ~/.config/i3/config
-|4,39,14,74,1587494026,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  39  0  ~/.config/i3/config
-|4,39,39,0,1587494015,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587494007,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587494007,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587494007,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587494007,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587494007,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587494007,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587494007,"~/.config/i3/config"
--'  1  0  ~/.config/i3/config
-|4,39,1,0,1587494007,"~/.config/i3/config"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  8  34  ~/mycalendar/backend/package.json
-|4,39,8,34,1587342242,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
--'  1  0  ~/mycalendar/backend/package.json
-|4,39,1,0,1587342222,"~/mycalendar/backend/package.json"
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  1  0  ~/.Xresources
+|4,39,1,0,1588997115,"~/.Xresources"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
+-'  45  77  ~/.config/i3/config
+|4,39,45,77,1588996193,"~/.config/i3/config"
 
 # Histórico de marcas nos arquivos (mais recente primeiro):
 
+> ~/.zshrc
+	*	1589002815	0
+	"	118	0
+	^	11	12
+	.	11	11
+	+	109	39
+	+	112	21
+	+	111	54
+	+	114	75
+	+	115	10
+	+	117	1
+	+	114	0
+	+	115	0
+	+	116	0
+	+	114	0
+	+	115	0
+	+	116	0
+	+	114	0
+	+	115	0
+	+	116	0
+	+	11	11
+
+> ~/.Xresources
+	*	1588997985	0
+	"	79	0
+	^	42	16
+	.	77	15
+	+	2	27
+	+	58	15
+	+	59	36
+	+	60	37
+	+	61	41
+	+	80	0
+	+	78	0
+	+	75	33
+	+	77	15
+
 > ~/.config/i3/config
-	*	1587495941	0
-	"	51	8
-	^	224	20
-	.	224	19
+	*	1588996192	0
+	"	45	77
+	^	45	78
+	.	45	77
 	+	191	0
 	+	190	3
 	+	190	11
@@ -562,25 +597,29 @@ $
 	+	207	1
 	+	208	1
 	+	224	19
-
-> ~/.Xresources
-	*	1587494885	0
-	"	61	41
-	^	61	42
-	.	61	41
-	+	2	27
-	+	58	15
-	+	59	36
-	+	60	37
-	+	61	41
+	+	45	40
+	+	206	37
+	+	46	41
+	+	47	0
+	+	45	77
 
 > ~/.Xdefaults
-	*	1587494060	0
+	*	1588995284	0
 	"	1	0
-	^	3	6
-	.	3	0
+	^	6	26
+	.	6	25
 	+	2	17
-	+	3	0
+	+	3	22
+	+	5	32
+	+	6	25
+
+> ~/.xresources
+	*	1588995180	0
+	"	1	0
+
+> /mnt/alexandremj/.config/i3/config
+	*	1588981693	0
+	"	225	0
 
 > ~/mycalendar/backend/package.json
 	*	1587342241	0
@@ -665,28 +704,6 @@ $
 	+	30	37
 	+	27	14
 
-> ~/.zshrc
-	*	1587275618	0
-	"	11	18
-	^	11	19
-	.	11	18
-	+	109	39
-	+	112	21
-	+	111	54
-	+	114	75
-	+	115	10
-	+	117	1
-	+	114	0
-	+	115	0
-	+	116	0
-	+	114	0
-	+	115	0
-	+	116	0
-	+	114	0
-	+	115	0
-	+	116	0
-	+	11	18
-
 > ~/tools/config/redshifter/redshifter.conf
 	*	1587060409	0
 	"	1	15
@@ -714,10 +731,6 @@ $
 	+	34	1
 	+	230	17
 	+	35	16
-
-> ~/.xresources
-	*	1585801304	0
-	"	1	0
 
 > ~/Imagens/Papéis de parede/.xresources
 	*	1585801227	0
@@ -1476,7 +1489,3 @@ $
 	+	34	15
 	+	35	15
 	+	3	0
-
-> ~/Downloads/supertab.vmb
-	*	1577676842	0
-	"	1	0
