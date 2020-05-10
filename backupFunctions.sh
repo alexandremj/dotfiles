@@ -5,34 +5,12 @@
 # not acquired simply by a dotfile like currently installed packages
 
 
-CODE_SETTINGS_LOCATION="$HOME/.config/Code - OSS/User/settings.json"
 CUR_PATH=$(pwd)
-
-
-function backupVscode {
-    echo "Backing up Visual Studio Code configuration..."
-
-    codeExtensionList=$(code --list-extensions)
-    settingsFile=$(cat "$CODE_SETTINGS_LOCATION")
-
-    echo $codeExtensionList > "$CUR_PATH/vscode/codeExtensions.json"
-    echo $settingsFile > "$CUR_PATH/vscode/codeSettings.json"
-
-    echo "Visual Studio Code backup completed"
-}
-
 
 function backupPikaur {
     echo "Backing up pikaur database..."
 
-    echo "Do you wish the backup to contain foreign packages (e.g. from AUR)?"
-
-    select includeForeign in "Yes" "No"; do
-        case $includeForeign in
-	        Yes ) $(pikaur -Qqe > "$CUR_PATH/pikaur/pkglist.txt"); break;;
-            No  ) $(pikaur -Qqen > "$CUR_PATH/pikaur/pkglist.txt");;
-	    esac
-    done
+    pikaur -Qqe > "$CUR_PATH/pikaur/pkglist.txt"
 
     echo "Pikaur database backup completed"
 }
@@ -53,6 +31,12 @@ function backupVim {
     cat ~/.vimrc > "$CUR_PATH/vim/.vimrc"
 
     echo "Vim dotfile backup completed"
+
+    echo "Backing up NeoVim dotfiles"
+
+    cat $HOME/.config/nvim/init.vim > "$CUR_PATH/nvim/init.vim"
+
+    echo "NeoVim dotfile backup completed"
 }
 
 
@@ -62,13 +46,30 @@ function backupGit {
     cat ~/.gitconfig > "$CUR_PATH/git/.gitconfig"
 
     echo "Git dotfiles backup completed"
+} 
+
+
+function backupAlacritty {
+    echo "Backing up alacritty.yml"
+
+    cp $HOME/.alacritty.yml $CUR_PATH/alacritty/
+
+    echo "Alacritty backup completed"
 }
 
+function backupI3wm {
+    echo "Backing up i3 config dotfile"
+    cp $HOME/.config/i3/config $CUR_PATH/i3/
+    echo "Backing up rofi config dotfile"
+    cp $HOME/.config/rofi/config $CUR_PATH/rofi/
+    echo "Completed"
+}
 
 function fullBackup {
-    backupVscode
     backupPikaur
     backupZsh
     backupVim
     backupGit
+    backupAlacritty
+    backupI3wm
 }
