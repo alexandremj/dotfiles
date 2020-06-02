@@ -18,6 +18,8 @@ bluez-hid2hci
 bluez-utils
 btrfs-progs
 bzip2
+chromium
+cockatrice
 code
 coreutils
 cpupower
@@ -76,6 +78,7 @@ gtksourceview-pkgbuild
 gufw
 gzip
 haveged
+heroku-cli
 hexchat
 hitori
 i3-gaps
@@ -98,6 +101,7 @@ ipw2200-fw
 jfsutils
 jre8-openjdk
 keepass
+keepassxc
 kernel-alive
 less
 lib32-libva-vdpau-driver
@@ -110,19 +114,21 @@ lib32-vulkan-radeon
 libappindicator-gtk3
 libdvdcss
 libkscreen
+libreoffice-fresh
 libva-mesa-driver
 libva-vdpau-driver
 licenses
 lightsoff
 linux-firmware
+linux-lts-headers
 linux-rt-lts-manjaro-nvidia-430xx
-linux316-headers
 linux54
 linux54-headers
 logrotate
 lollypop
 lrzip
 lsb-release
+lutris
 lvm2
 ly-git
 m4
@@ -229,6 +235,7 @@ terminus-font
 texinfo
 timeshift
 tlp
+tor-browser
 transmission-gtk
 ttf-bitstream-vera
 ttf-dejavu
@@ -256,9 +263,11 @@ wallpapers-2018
 wallpapers-juhraya
 wget
 which
+wine
 wireshark-qt
 woeusb-git
 wpa_supplicant
+xclip
 xdg-su
 xdg-user-dirs
 xdg-utils
