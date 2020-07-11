@@ -108,8 +108,8 @@ zplugin light zdharma/fast-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
 
-alias up='pikaur -Syu'
-alias get='pikaur -S '
+alias up='pamac update -a --devel'
+alias get='pamac install '
 
 alias vim='nvim ' 
 
@@ -118,3 +118,5 @@ export PATH=$PATH:$HOME/tools
 if systemctl -q is-active graphical.target && [[ ! $DISPLAY && $XDG_VTNR -eq 1 ]]; then
   exec startx
 fi
+
+fortune | cowsay

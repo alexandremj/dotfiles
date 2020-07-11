@@ -41,8 +41,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-# bindsym $mod+Return exec i3-sensible-terminal
-# bindsym $mod+Return exec --no-startup-id urxvt -fn "xft:Fira Code SemiBold:pixelsize=14"
 bindsym $mod+Return exec alacritty
 
 # kill focused window
@@ -143,7 +141,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -178,18 +176,14 @@ bar {
     status_command i3status
     position top
     mode hide
+    status_command i3status
 }
 
 # 
 # USER CONFIGURATIONS BY ALEXANDRE MULLER JUNIOR
 #
 
-exec feh --bg-scale /home/alexandremj/wallpaper.png
-
 for_window [class=".*"] border pixel 0
-
-gaps inner 8
-gaps outer 8
 
 # can lead to issues since not using the venv python executable
 bindcode 232 exec brightness -
@@ -198,7 +192,16 @@ bindsym $mod+n exec --no-startup-id /usr/bin/python /home/alexandremj/tools/reds
 
 bindsym $mod+Shift+F exec firefox
 
-workspace_auto_back_and_forth yes
+exec --no-startup-id xrandr --output DP-1 --mode 1366x768 --verbose --right-of eDP-1
 workspace 10 output DP-1
 
-exec_always --no-startup-id xrandr --output DP-1 --mode 1366x768 --verbose --right-of eDP-1
+exec --no-startup-id feh --bg-scale /home/alexandremj/wallpaper.png
+
+gaps inner 8
+gaps outer 8
+
+workspace_auto_back_and_forth yes
+smart_gaps on
+smart_borders on
+
+exec --no-startup-id xinput set-prop "SYN1B7E:01 06CB:2970 Touchpad" "libinput Tapping Enabled" 1
